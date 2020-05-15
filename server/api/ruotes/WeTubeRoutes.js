@@ -2,5 +2,5 @@
 module.exports = (app) => {
   var weTube = require("../controllers/weTube");
 
-  app.route("/test").get(weTube.list_all_videos);
+  app.route("/videos/most-popular").get(weTube.list_most_popular_videos);
 };
