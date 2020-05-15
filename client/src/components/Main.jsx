@@ -3,7 +3,9 @@ import VideoContainer from "./videoContainer/VideoContainer.jsx"
 
 function Main() {
   return <div>
-    <h1></h1>
+    <h1>Wetube!</h1>
+    <VideoContainer />
+    <VideoContainer />
     <VideoContainer />
   </div>;
 }
