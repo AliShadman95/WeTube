@@ -4,26 +4,21 @@ import Container from "react-bootstrap/Container";
 import CardGroup from "react-bootstrap/CardGroup";
 import VideoCard from "../videoCard/VideoCard.jsx";
 
-
-
-
 function VideoContainer() {
-    return (
-        <div>
-            <Jumbotron fluid>
-                <Container>
-                    <CardGroup>
-
-                        <VideoCard />
-                        <VideoCard />
-                        <VideoCard />
-                        <VideoCard />
-
-                    </CardGroup>
-                </Container>
-            </Jumbotron>
-        </div>
-    );
+  return (
+    <div>
+      <Jumbotron fluid>
+        <Container>
+          <CardGroup>
+            <VideoCard />
+            <VideoCard />
+            <VideoCard />
+            <VideoCard />
+          </CardGroup>
+        </Container>
+      </Jumbotron>
+    </div>
+  );
 }
 
 export default VideoContainer;
