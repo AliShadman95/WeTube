@@ -3,6 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import Video from "../../components/videoPage/Video";
 import OtherVideo from "../../components/videoPage/OtherVideo";
 import video from "./videoPageContent.json";
+import BoxDescription from "../../components/videoPage/BoxDescription";
 
 const VideoPageContent = (props) => {
   return (
@@ -10,13 +11,12 @@ const VideoPageContent = (props) => {
       <Row>
         <Col xs="8" style={{ padding: "10px" }}>
           <Video src="https://www.youtube.com/embed/qqSH-nUm2aU" />
-          <Row style={{ border: "1px green solid" }}>
+          <Row>
             <Col>
-              <p>Titolo video e satistiche</p>
-              <p>1400 visualizzazioni - data 01/01/2000</p>
+              <BoxDescription />
             </Col>
           </Row>
-          <Row style={{ border: "1px green solid" }}>
+          <Row>
             <Col>commenti vari</Col>
           </Row>
         </Col>

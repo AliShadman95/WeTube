@@ -20,7 +20,7 @@ function OtherVideo({ src, titolo, nomecanale, view, data }) {
         <Col xs="6" style={{ lineHeight: "1" }}>
           <p>{titolo}</p>
           <p>{nomecanale}</p>
-          <p>{view}</p>
+          <p>{view} visualizzazioni</p>
           <p>{data}</p>
         </Col>
       </Row>
