@@ -3,7 +3,7 @@ import VideoContainer from "./videoContainer/VideoContainer.jsx"
 
 function Main() {
   return <div>
-    <h1>Homepage</h1>
+    <h1></h1>
     <VideoContainer />
   </div>;
 }

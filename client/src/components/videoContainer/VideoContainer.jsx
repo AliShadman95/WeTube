@@ -3,7 +3,7 @@ import React from "react";
 
 function VideoContainer() {
     return <div>
-        <h1>ciao ciao</h1>
+        <h1></h1>
     </div>;
 }
 
