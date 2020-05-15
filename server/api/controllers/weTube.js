@@ -10,7 +10,6 @@ exports.list_most_popular_videos = async (req, res) => {
       }key=${apiKey}`
     );
 
-    console.log(data.data);
     res.send(data.data);
   } catch (error) {
     res.send(error);
@@ -24,7 +23,6 @@ exports.list_videos_by_search = async (req, res) => {
       `https://www.googleapis.com/youtube/v3/search?part=snippet&order=relevance&q=${searchValue}&regionCode=IT&key=[YOUR_API_KEY]`
     );
 
-    console.log(data.data);
     res.send(data.data);
   } catch (error) {
     res.send(error);
@@ -39,7 +37,6 @@ exports.list_comments_by_video = async (req, res) => {
       `https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&order=relevance&videoId=EZXvdPZx-PY&key=${apiKey}`
     );
 
-    console.log(data.data);
     res.send(data.data);
   } catch (error) {
     res.send(error);
