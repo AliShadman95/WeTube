@@ -13,18 +13,7 @@ function VideoContainer() {
             <Jumbotron fluid>
                 <Container>
                     <CardGroup>
-                        <Card>
-                            <Card.Img variant="top" src={image} />
-                            <Card.Body>
-                                <Card.Title>Ezio Bosso: Rain, In Your Black Eyes</Card.Title>
-                                <Card.Text>
-                                    Ezio Bosso
-      </Card.Text>
-                                <Card.Text>
-                                    Data di Pubblicazione
-      </Card.Text>
-                            </Card.Body>
-                        </Card>
+
                         <Card>
                             <Card.Img variant="top" src={image} />
                             <Card.Body>
