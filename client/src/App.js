@@ -1,6 +1,6 @@
 import React from "react";
 import Main from "./components/Main";
-import VideoPageContent from "./container/videoPage/VideoPageContent";
+import VideoPageContent from "./container/videoPage/VideoPageContent.jsx";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Provider } from "react-redux";
