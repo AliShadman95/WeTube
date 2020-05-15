@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Video from "../../components/videoPage/Video";
-import OtherVideo from "../../components/videoPage/OtherVideo";
+import RelatedVideo from "../../commons/relatedVideo/RelatedVideo.jsx";
 import video from "./videoPageContent.json";
 import BoxDescription from "../../components/videoPage/BoxDescription";
 
@@ -23,7 +23,7 @@ const VideoPageContent = (props) => {
         <Col xs="4" style={{ padding: "5px" }}>
           <h4>Prossimi video</h4>
           {video.othervideo.map((video) => (
-            <OtherVideo
+            <RelatedVideo
               key={video.id}
               src={video.src}
               titolo={video.titolo}
