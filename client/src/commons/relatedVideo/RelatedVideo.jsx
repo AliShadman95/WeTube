@@ -1,31 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 
-function OtherVideo({ src, titolo, nomecanale, view, data }) {
+function RelatedVideo({ src, titolo, nomecanale, view, data, isSearchPage }) {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <Container fluid={true} style={{ padding: "5px" }}>
-      <Row>
-        <Col xs="6">
+    <Container
+      style={{ padding: "5px" }}
+      className={isHovered && "related-video-hover"}
+      onMouseEnter={() => {
+        setIsHovered(true);
+      }}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <Row className="align-items-center">
+        <Col xs="4">
           <div>
-            <iframe
-              width="190px"
-              height="130px"
-              src={`${src}`}
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <img src={src}></img>
           </div>
         </Col>
-        <Col xs="6" style={{ lineHeight: "1" }}>
-          <p>{titolo}</p>
-          <p>{nomecanale}</p>
-          <p>{view} visualizzazioni</p>
-          <p>{data}</p>
+        <Col xs="6">
+          <Row className="flex-column">
+            <Col className={isSearchPage && "pb-3"}>
+              <span>{titolo}</span>
+            </Col>
+            <Col className={isSearchPage && "pb-3"}>
+              <span>{nomecanale}</span>
+            </Col>
+            <Col className={isSearchPage && "pb-3"}>
+              <span>{view} visualizzazioni</span>
+            </Col>
+            <Col className={isSearchPage && "pb-3"}>
+              <span>{data}</span>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </Container>
   );
 }
 
-export default OtherVideo;
+export default RelatedVideo;

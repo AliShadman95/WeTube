@@ -2,7 +2,8 @@
   "othervideo": [
     {
       "id": 1,
-      "src": "https://www.youtube.com/embed/psWCmLwvWBE?controls=0",
+      "src": "https://i.ytimg.com/vi/Ogyi0GPR_Ik/mqdefault.jpg",
+      "srcSmall": "https://i.ytimg.com/vi/Ogyi0GPR_Ik/default.jpg",
       "titolo": "titolo 1",
       "nomecanale": "canale 1",
       "view": 100000,
@@ -10,7 +11,8 @@
     },
     {
       "id": 2,
-      "src": "https://www.youtube.com/embed/KQOfDZ3y2HY",
+      "src": "https://i.ytimg.com/vi/Ogyi0GPR_Ik/mqdefault.jpg",
+      "srcSmall": "https://i.ytimg.com/vi/Ogyi0GPR_Ik/default.jpg",
       "titolo": "titolo 2",
       "nomecanale": "canale 2",
       "view": 200000,
@@ -18,7 +20,8 @@
     },
     {
       "id": 3,
-      "src": "https://www.youtube.com/embed/5koA0Yd9SFc",
+      "src": "https://i.ytimg.com/vi/Ogyi0GPR_Ik/mqdefault.jpg",
+      "srcSmall": "https://i.ytimg.com/vi/Ogyi0GPR_Ik/default.jpg",
       "titolo": "titolo 3",
       "nomecanale": "canale 3",
       "view": 300000,
@@ -26,7 +29,8 @@
     },
     {
       "id": 4,
-      "src": "https://www.youtube.com/embed/V8OG2MZurdA",
+      "src": "https://i.ytimg.com/vi/Ogyi0GPR_Ik/mqdefault.jpg",
+      "srcSmall": "https://i.ytimg.com/vi/Ogyi0GPR_Ik/default.jpg",
       "titolo": "titolo 4",
       "nomecanale": "canale 4",
       "view": 400000,
@@ -34,7 +38,8 @@
     },
     {
       "id": 5,
-      "src": "https://www.youtube.com/embed/pcvX43F3RvI",
+      "src": "https://i.ytimg.com/vi/Ogyi0GPR_Ik/mqdefault.jpg",
+      "srcSmall": "https://i.ytimg.com/vi/Ogyi0GPR_Ik/default.jpg",
       "titolo": "titolo 5",
       "nomecanale": "canale 5",
       "view": 500000,
