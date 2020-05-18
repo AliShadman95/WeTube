@@ -1,11 +1,10 @@
 import React from "react";
-import VideoContainer from "./videoContainer/VideoContainer.jsx";
-import Menu from "./menu/Menu.jsx";
+import VideoContainer from "./homepage/homepageVideoContainer/HomepageVideoContainer.jsx";
 
 function Main() {
   return (
     <div>
-      <Menu />
+      <h1>Wetube!</h1>
       <VideoContainer />
       <VideoContainer />
       <VideoContainer />
