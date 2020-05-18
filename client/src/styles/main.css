@@ -1,0 +1,43 @@
+/* General */
+body {
+  background-color: #2a2c41;
+}
+
+/* Related Video */
+
+.related-video-container,
+.related-video-container > div > div {
+  padding-left: 8px;
+}
+
+.related-video-thumbnail {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.related-video-title {
+  color: #edf2f4;
+}
+
+.related-video-detail {
+  color: #8d99ae;
+  font-size: 14px;
+  padding-bottom: 0px;
+}
+
+.related-video-hover {
+  background-color: rgb(47, 50, 82);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.related-video-small-title {
+  font-weight: bold;
+  color: #edf2f4;
+}
+
+.related-video-small-detail {
+  color: #8d99ae;
+  font-size: 12px;
+  padding-bottom: 0px;
+}
