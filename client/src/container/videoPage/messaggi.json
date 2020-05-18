@@ -1,0 +1,291 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "B3mE-HMrmetSuxBuwsfkO6Opv2w",
+  "nextPageToken": "QURTSl9pMHNDWUFqQ3BjZnlIRUp6cDBxdkVuVGpFY1VBMGhOTWpFeDh6TkwtQnJHNTBoaFU1Z1BkcV9rRmE0NldfaGZkM2QtUndEUkNGZVBrTmo2VXk1Q1REWDBENzBjN0VnZnQ0RkhXMTlOMmpTVk5fa1FlTVhQU3VUV2FYTU9FQWE4T2RuRlhGQ2JpT1dhekE=",
+  "pageInfo": {
+    "totalResults": 2,
+    "resultsPerPage": 2
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "S7LFtWm6tRKw-FCyjYhgajrOW1o",
+      "id": "UgxHPlnqI1MCAX3usot4AaABAg",
+      "snippet": {
+        "videoId": "UV-PCBVRhPA",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "m_ldus326ny0dLeWTKr-OkSiriI",
+          "id": "UgxHPlnqI1MCAX3usot4AaABAg",
+          "snippet": {
+            "videoId": "UV-PCBVRhPA",
+            "textDisplay": "questi ragazzi ridono e vanno avanti ,anche in questa situazione, sono dei guerrieri. spero che un giorno si possano riprendere",
+            "textOriginal": "questi ragazzi ridono e vanno avanti ,anche in questa situazione, sono dei guerrieri. spero che un giorno si possano riprendere",
+            "authorDisplayName": "Marco Santoni",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJz1TdKx2ZBlQRyxhSo_TqmLMooJUChcu-amzQ=s48-c-k-c0xffffffff-no-rj-mo",
+            "authorChannelUrl": "http://www.youtube.com/channel/UClx_v1VxkcjfeIwwLJeyKDg",
+            "authorChannelId": {
+              "value": "UClx_v1VxkcjfeIwwLJeyKDg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 524,
+            "publishedAt": "2020-05-14T12:34:05Z",
+            "updatedAt": "2020-05-14T12:34:05Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "g7V6uIc-4Z4mhpCpF2HXUULi8lk",
+            "id": "UgxHPlnqI1MCAX3usot4AaABAg.98dHmpo3I8j98n920-4Pxp",
+            "snippet": {
+              "videoId": "UV-PCBVRhPA",
+              "textDisplay": "@jobina queen che intendi? In che modo piangere davanti a un altro farebbe crollare le mie difese?",
+              "textOriginal": "@jobina queen che intendi? In che modo piangere davanti a un altro farebbe crollare le mie difese?",
+              "parentId": "UgxHPlnqI1MCAX3usot4AaABAg",
+              "authorDisplayName": "Nome Cognome",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwQkh04SW0eLXc2p6aQ8Kvx8d1i_8uqsGprig=s48-c-k-c0xffffffff-no-rj-mo",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCmsknsNoQhfCOoVqmr68IwA",
+              "authorChannelId": {
+                "value": "UCmsknsNoQhfCOoVqmr68IwA"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2020-05-18T08:30:03Z",
+              "updatedAt": "2020-05-18T08:30:03Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "P5en-Fpm5YsykQAn_r-PxRIdu0E",
+            "id": "UgxHPlnqI1MCAX3usot4AaABAg.98dHmpo3I8j98lJGZBHnX-",
+            "snippet": {
+              "videoId": "UV-PCBVRhPA",
+              "textDisplay": "@jobina queen concordo!",
+              "textOriginal": "@jobina queen concordo!",
+              "parentId": "UgxHPlnqI1MCAX3usot4AaABAg",
+              "authorDisplayName": "Marco Santoni",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJz1TdKx2ZBlQRyxhSo_TqmLMooJUChcu-amzQ=s48-c-k-c0xffffffff-no-rj-mo",
+              "authorChannelUrl": "http://www.youtube.com/channel/UClx_v1VxkcjfeIwwLJeyKDg",
+              "authorChannelId": {
+                "value": "UClx_v1VxkcjfeIwwLJeyKDg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 3,
+              "publishedAt": "2020-05-17T15:20:56Z",
+              "updatedAt": "2020-05-17T15:20:56Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "NDO2cWkaH2fE_m6BEFgbQGlF52o",
+            "id": "UgxHPlnqI1MCAX3usot4AaABAg.98dHmpo3I8j98lDNX-fr6P",
+            "snippet": {
+              "videoId": "UV-PCBVRhPA",
+              "textDisplay": "Sai cos&#39;è quella risata ?È una difesa ...Nn tutti piangono davanti agli altri perchè nn se lo possono permettere perchè se piangono..crolla tutto è andare avanti è più difficile. ....",
+              "textOriginal": "Sai cos'è quella risata ?È una difesa ...Nn tutti piangono davanti agli altri perchè nn se lo possono permettere perchè se piangono..crolla tutto è andare avanti è più difficile. ....",
+              "parentId": "UgxHPlnqI1MCAX3usot4AaABAg",
+              "authorDisplayName": "jobina queen",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxMPKjuIs06TzkVt8MRqJz6TfiBWQoy4lnV9Q=s48-c-k-c0xffffffff-no-rj-mo",
+              "authorChannelUrl": "http://www.youtube.com/channel/UClPcEmpJ8y7F_q6em-f-0SQ",
+              "authorChannelId": {
+                "value": "UClPcEmpJ8y7F_q6em-f-0SQ"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 16,
+              "publishedAt": "2020-05-17T14:29:27Z",
+              "updatedAt": "2020-05-17T14:29:27Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Qmm23qZ7BpVBDeN94EDdQEJ9tHs",
+      "id": "UgwDNQerzBiIBOlkQqx4AaABAg",
+      "snippet": {
+        "videoId": "UV-PCBVRhPA",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "3zgnuQ-ExBD2tEdH3eXVR4J3yqI",
+          "id": "UgwDNQerzBiIBOlkQqx4AaABAg",
+          "snippet": {
+            "videoId": "UV-PCBVRhPA",
+            "textDisplay": "“L’Italia è un paese difettoso infatti torna indietro”",
+            "textOriginal": "“L’Italia è un paese difettoso infatti torna indietro”",
+            "authorDisplayName": "Dia 2312",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxHx7VD-toXRm3WWyXFtFhTglfTf-DV3anRSQ=s48-c-k-c0xffffffff-no-rj-mo",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCwTsRjDy_LjjtKuZlHOIArg",
+            "authorChannelId": {
+              "value": "UCwTsRjDy_LjjtKuZlHOIArg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 183,
+            "publishedAt": "2020-05-16T09:36:20Z",
+            "updatedAt": "2020-05-16T09:36:20Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 11,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "8FU0l-w8Buh1rQlQCI0-ewlVSEU",
+            "id": "UgwDNQerzBiIBOlkQqx4AaABAg.98i71j6oVRs98nCdnjYb0h",
+            "snippet": {
+              "videoId": "UV-PCBVRhPA",
+              "textDisplay": "Sempre a criticare, cosa pensi? Che all&#39;estero sia diverso? Solo in Italia il CoronaVirus ha lasciato gente per strada? Ma per favore. Se vai a NewYork di questi giorni come a Parigi a Londra  a Instambul OVUNQUE (tranne negli Emirati Arabi) le persone stanno per strada. A NewYork la gente dorme nella metropolitana, perché negli Stati Uniti se non ce la fai ti lasciano morire per strada. In Italia almeno è diverso, e ce chi ci prova ad aiutare la gente in difficoltà, al posto di calpestarla.",
+              "textOriginal": "Sempre a criticare, cosa pensi? Che all'estero sia diverso? Solo in Italia il CoronaVirus ha lasciato gente per strada? Ma per favore. Se vai a NewYork di questi giorni come a Parigi a Londra  a Instambul OVUNQUE (tranne negli Emirati Arabi) le persone stanno per strada. A NewYork la gente dorme nella metropolitana, perché negli Stati Uniti se non ce la fai ti lasciano morire per strada. In Italia almeno è diverso, e ce chi ci prova ad aiutare la gente in difficoltà, al posto di calpestarla.",
+              "parentId": "UgwDNQerzBiIBOlkQqx4AaABAg",
+              "authorDisplayName": "Useless - SeaR",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzqqHV4pei72c0kYumz-2TD7XrDUc5hgOSWPQ=s48-c-k-c0xffffffff-no-rj-mo",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCx55Mlu9Fo7_NnbWJq9waMA",
+              "authorChannelId": {
+                "value": "UCx55Mlu9Fo7_NnbWJq9waMA"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2020-05-18T09:01:33Z",
+              "updatedAt": "2020-05-18T09:01:33Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "i_M85JvFjub6Xga-jIiIFMzwwFo",
+            "id": "UgwDNQerzBiIBOlkQqx4AaABAg.98i71j6oVRs98nAePFzq4T",
+            "snippet": {
+              "videoId": "UV-PCBVRhPA",
+              "textDisplay": "@Zonta&#39;s 00 21centesimi a persona",
+              "textOriginal": "@Zonta's 00 21centesimi a persona",
+              "parentId": "UgwDNQerzBiIBOlkQqx4AaABAg",
+              "authorDisplayName": "Amedeo Tommaso Lafalce",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwfVUs014jYW1HvNufl-kCvEw526hzwlv3FMQ=s48-c-k-c0xffffffff-no-rj-mo",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCpaxeMvUTRJjjkZRAnLj0-Q",
+              "authorChannelId": {
+                "value": "UCpaxeMvUTRJjjkZRAnLj0-Q"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2020-05-18T08:44:10Z",
+              "updatedAt": "2020-05-18T08:44:23Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "kCtbHmzWqbLxFJTp4yODlg06NV0",
+            "id": "UgwDNQerzBiIBOlkQqx4AaABAg.98i71j6oVRs98nAbslsB1X",
+            "snippet": {
+              "videoId": "UV-PCBVRhPA",
+              "textDisplay": "@Vas Cadabagno che se dessero al popolo non si guadagnerebbe nemmeno 1 €",
+              "textOriginal": "@Vas Cadabagno che se dessero al popolo non si guadagnerebbe nemmeno 1 €",
+              "parentId": "UgwDNQerzBiIBOlkQqx4AaABAg",
+              "authorDisplayName": "Amedeo Tommaso Lafalce",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwfVUs014jYW1HvNufl-kCvEw526hzwlv3FMQ=s48-c-k-c0xffffffff-no-rj-mo",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCpaxeMvUTRJjjkZRAnLj0-Q",
+              "authorChannelId": {
+                "value": "UCpaxeMvUTRJjjkZRAnLj0-Q"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2020-05-18T08:43:49Z",
+              "updatedAt": "2020-05-18T08:43:49Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "429hiaYSsejd-swn92R0K58pbgM",
+            "id": "UgwDNQerzBiIBOlkQqx4AaABAg.98i71j6oVRs98mwXrvIehY",
+            "snippet": {
+              "videoId": "UV-PCBVRhPA",
+              "textDisplay": "@Diego87 Romano 11 milioni da quello scemo di zingaretti e 10 milioni per una sprovveduta",
+              "textOriginal": "@Diego87 Romano 11 milioni da quello scemo di zingaretti e 10 milioni per una sprovveduta",
+              "parentId": "UgwDNQerzBiIBOlkQqx4AaABAg",
+              "authorDisplayName": "Zonta's 00",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxfEZuzKyO3_wN7KVqTIgZPjAhQJeZGLL8S_A=s48-c-k-c0xffffffff-no-rj-mo",
+              "authorChannelUrl": "http://www.youtube.com/channel/UC3Pnn3G9mPgLu8Lb_wlwmrA",
+              "authorChannelId": {
+                "value": "UC3Pnn3G9mPgLu8Lb_wlwmrA"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2020-05-18T06:32:04Z",
+              "updatedAt": "2020-05-18T06:32:04Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "ZKol4KJRXkWtQlJqnUKRplDKi_8",
+            "id": "UgwDNQerzBiIBOlkQqx4AaABAg.98i71j6oVRs98m0kY0t7iV",
+            "snippet": {
+              "videoId": "UV-PCBVRhPA",
+              "textDisplay": "Diego87 Romano aggiungerei 49 mln per la lega e altri mln per finanziare un certo giornale, stipendi e vitalizi sono spiccioli in confronto",
+              "textOriginal": "Diego87 Romano aggiungerei 49 mln per la lega e altri mln per finanziare un certo giornale, stipendi e vitalizi sono spiccioli in confronto",
+              "parentId": "UgwDNQerzBiIBOlkQqx4AaABAg",
+              "authorDisplayName": "Vas Cadabagno",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJz8GfDAlE0UJLQROn49JqqQilzL9UF_KZGq0A=s48-c-k-c0xffffffff-no-rj-mo",
+              "authorChannelUrl": "http://www.youtube.com/channel/UCPxD-Dh8ElxlndHrF8NfYIg",
+              "authorChannelId": {
+                "value": "UCPxD-Dh8ElxlndHrF8NfYIg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2020-05-17T21:58:23Z",
+              "updatedAt": "2020-05-17T21:58:23Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "S7LFtWm6tRKw-FCyjYhgajrOW1o",
+      "id": "UgxHPlnqI1MCAX3usot4AaABAg",
+      "snippet": {
+        "videoId": "UV-PCBVRhPA",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "m_ldus326ny0dLeWTKr-OkSiriI",
+          "id": "UgxHPlnqI1MCAX3usot4AaABAg",
+          "snippet": {
+            "videoId": "UV-PCBVRhPA",
+            "textDisplay": "questi ragazzi ridono e vanno avanti ,anche in questa situazione, sono dei guerrieri. spero che un giorno si possano riprendere",
+            "textOriginal": "questi ragazzi ridono e vanno avanti ,anche in questa situazione, sono dei guerrieri. spero che un giorno si possano riprendere",
+            "authorDisplayName": "Marco Santoni",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJz1TdKx2ZBlQRyxhSo_TqmLMooJUChcu-amzQ=s48-c-k-c0xffffffff-no-rj-mo",
+            "authorChannelUrl": "http://www.youtube.com/channel/UClx_v1VxkcjfeIwwLJeyKDg",
+            "authorChannelId": {
+              "value": "UClx_v1VxkcjfeIwwLJeyKDg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 524,
+            "publishedAt": "2020-05-14T12:34:05Z",
+            "updatedAt": "2020-05-14T12:34:05Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    }
+  ]
+}

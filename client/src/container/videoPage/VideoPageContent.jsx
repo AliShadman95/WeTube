@@ -1,9 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import Video from "../../components/videoPage/Video";
+import Video from "../../components/videoPage/Video.jsx";
 import RelatedVideo from "../../commons/relatedVideo/RelatedVideo.jsx";
+import BoxDescription from "../../components/videoPage/BoxDescription.jsx";
+import BoxMessagesItem from "../../components/videoPage/BoxMessagesItem.jsx";
+import MessageReplay from "../../components/videoPage/MessageReplay.jsx";
 import video from "./videoPageContent.json";
-import BoxDescription from "../../components/videoPage/BoxDescription";
+import mess from "./messaggi.json";
 
 const VideoPageContent = (props) => {
   return (
@@ -17,7 +20,46 @@ const VideoPageContent = (props) => {
             </Col>
           </Row>
           <Row>
-            <Col>commenti vari</Col>
+            <Col>
+              {mess.items.map((item) => {
+                const {
+                  authorChannelUrl,
+                  authorProfileImageUrl,
+                  authorDisplayName,
+                  publishedAt,
+                  textDisplay,
+                  likeCount,
+                } = item.snippet.topLevelComment.snippet;
+                return (
+                  <div key={item.id}>
+                    <BoxMessagesItem
+                      channelLink={authorChannelUrl}
+                      imgLogo={authorProfileImageUrl}
+                      nickName={authorDisplayName}
+                      publishedAt={publishedAt}
+                      textDisplay={textDisplay}
+                      likeCount={likeCount}
+                    />
+                    {item.replies && (
+                      <MessageReplay>
+                        {item.replies.comments.reverse().map((rep) => {
+                          return (
+                            <BoxMessagesItem
+                              channelLink={rep.snippet.authorChannelUrl}
+                              imgLogo={rep.snippet.authorProfileImageUrl}
+                              nickName={rep.snippet.authorDisplayName}
+                              publishedAt={rep.snippet.publishedAt}
+                              textDisplay={rep.snippet.textDisplay}
+                              likeCount={rep.snippet.likeCount}
+                            />
+                          );
+                        })}
+                      </MessageReplay>
+                    )}
+                  </div>
+                );
+              })}
+            </Col>
           </Row>
         </Col>
         <Col xs="4" style={{ padding: "5px" }}>
