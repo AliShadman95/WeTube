@@ -6,25 +6,24 @@ import video from "../videoPage/videoPageContent.json";
 function SearchPageContent() {
   return (
     <div>
-      <Jumbotron fluid>
-        <Container fluid>
-          <Row>
-            {video.othervideo.map((video) => (
-              <Col md="12">
-                <RelatedVideo
-                  isSearchPage
-                  key={video.id}
-                  src={video.src}
-                  titolo={video.titolo}
-                  nomecanale={video.nomecanale}
-                  view={video.view}
-                  data={video.data}
-                />
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </Jumbotron>
+      <Container fluid>
+        <Row>
+          {video.othervideo.map((video) => (
+            <Col md="12" className="mb-2">
+              <RelatedVideo
+                isSearchPage
+                key={video.id}
+                src={video.src}
+                titolo={video.titolo}
+                nomecanale={video.nomecanale}
+                view={video.view}
+                data={video.data}
+                description={video.description}
+              />
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </div>
   );
 }
