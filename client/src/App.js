@@ -7,11 +7,13 @@ import "./styles/main.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store/index";
+import Menu from "./components/menu/Menu.jsx";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
+        <Menu />
         <Router>
           <Route path="/" exact component={Main} />
           <Route path="/search/:videoId" exact component={SearchPageContent} />
