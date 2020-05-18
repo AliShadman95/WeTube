@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Collapse,
-  Button,
-  CardBody,
-  Card,
-} from "reactstrap";
+import { Container, Row, Col, Collapse } from "reactstrap";
 
-function BoxDescription() {
+function BoxDescription({
+  channelName,
+  numberView,
+  videoTitle,
+  numberSubscribers,
+  publishedAt,
+  description,
+  likeCount,
+  dislikeCount,
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -17,34 +18,58 @@ function BoxDescription() {
   return (
     <Container className="themed-container" fluid={true}>
       <Row>
-        <Col xs="5">
-          <p>Titolo e cavoli vari</p>
-          <p>1400 visualizzazioni - data 01/01/2000</p>
+        <Col xs="12">
+          <h6>
+            <b>{videoTitle}</b>
+          </h6>
         </Col>
-        <Col xs="5">bottoni vari</Col>
+      </Row>
+      <Row>
+        <Col>
+          <p>
+            {numberView} visualizzazioni - {publishedAt}
+          </p>
+        </Col>
+        <Col>
+          <div>
+            <span>
+              <i class="material-icons">thumb_up</i>
+            </span>
+            <span>{likeCount}</span>
+            <span>
+              <i class="material-icons">thumb_down</i>
+            </span>
+            <span>{dislikeCount}</span>
+          </div>
+        </Col>
       </Row>
       <Row>
         <Col>
           <hr></hr>
           <div>
-            <Button
-              color="light"
-              onClick={toggle}
-              style={{ marginBottom: "1rem" }}
-            >
-              Altro
-            </Button>
-            <Collapse isOpen={isOpen}>
-              <Card>
-                <CardBody>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. Nihil anim keffiyeh
-                  helvetica, craft beer labore wes anderson cred nesciunt
-                  sapiente ea proident.
-                </CardBody>
-              </Card>
-            </Collapse>
+            <Container>
+              <Row>
+                <Col>icona</Col>
+                <Col>
+                  {channelName} {numberSubscribers} di iscritti
+                </Col>
+              </Row>
+              <button
+                onClick={toggle}
+                style={{ marginBottom: "1rem", border: "none" }}
+              >
+                <b>Mostra altro</b>
+              </button>
+              <Collapse isOpen={isOpen}>
+                <Row>
+                  <Col>
+                    <p>{description}</p>
+                  </Col>
+                </Row>
+              </Collapse>
+            </Container>
           </div>
+          <hr></hr>
         </Col>
       </Row>
     </Container>

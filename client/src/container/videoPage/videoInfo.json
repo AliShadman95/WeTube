@@ -1,0 +1,63 @@
+{
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "RBQaXsMJ3r7YqD0b7ADY07yPUBg",
+      "id": "UV-PCBVRhPA",
+      "snippet": {
+        "publishedAt": "2020-05-13T06:23:54Z",
+        "channelId": "UCWJhBqnyVdHAuxexgjghNFw",
+        "title": "Una notte per le strade di Milano con chi ha perso tutto per colpa del coronavirus",
+        "description": "Dall'inizio dell'emergenza coronavirus migliaia di persone hanno perso il lavoro. Molte non riescono più a pagare l'affitto e sono costrette a vivere per strada, sono i nuovi senza tetto. Le telecamere di Fanpage.it vi portano per una notte nelle strade del centro di Milano, dove decine di persone dormono in tende e sacchi a pelo posizionati a terra. Storie di camerieri, aiuto cuoco, giovani abbandonati dalla società che cercano di arrangiarsi come possono. Le fontanelle della città diventano docce e lavanderie, gli unici bagni rimasti aperti vengono presi d'assalto e le prese di corrente all'aperto utilizzate per ricaricare gli smartphone. La ricerca dei cartoni per la notte, i nascondigli per i sacchi a pelo e la necessità di trovare qualcosa da mangiare fanno parte della quotidianità di questi ragazzi.\n\n\nFor any content use please feel free to contact licensing@ciaopeople.com\n\nEventuali permessi relativi all’utilizzo dei contenuti pubblicati possono essere richiesti a licensing@ciaopeople.com\n\nSe il video ti è piaciuto: http://fanpa.ge/ISCRIVITI-A-FANPAGE-IT\n\nCome attivare CORRETTAMENTE le notifiche, da qualsiasi smartphone: http://fanpa.ge/PROBLEMA-RISOLTO\n\nCommenta con noi le ultime notizie, entra in Community: http://fanpa.ge/FANPAGE-COMMUNITY\n\nFanpage.it è un giornale indipendente, sociale, partecipativo. Segui i nostri live, reportage, inchieste, storie e videonews. Partecipa con noi all'informazione.\n\nRimani connesso su Fanpage.it: \n:+1: Facebook: https://www.facebook.com/fanpage.it\n:camera_with_flash: Instagram: https://www.instagram.com/fanpage.it/\n:bird: Twitter: https://twitter.com/fanpage\n:heart: TikTok: https://vm.tiktok.com/CnNvFb/\n\nhttps://youmedia.fanpage.it/video/aa/XrhID-SwVPu55goI",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/UV-PCBVRhPA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/UV-PCBVRhPA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/UV-PCBVRhPA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/UV-PCBVRhPA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Fanpage.it",
+        "tags": [
+          "coronavirus",
+          "covid-19",
+          "senza tetto",
+          "milano",
+          "vita di strada",
+          "nuovi poveri",
+          "povertà"
+        ],
+        "categoryId": "25",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Una notte per le strade di Milano con chi ha perso tutto per colpa del coronavirus",
+          "description": "Dall'inizio dell'emergenza coronavirus migliaia di persone hanno perso il lavoro. Molte non riescono più a pagare l'affitto e sono costrette a vivere per strada, sono i nuovi senza tetto. Le telecamere di Fanpage.it vi portano per una notte nelle strade del centro di Milano, dove decine di persone dormono in tende e sacchi a pelo posizionati a terra. Storie di camerieri, aiuto cuoco, giovani abbandonati dalla società che cercano di arrangiarsi come possono. Le fontanelle della città diventano docce e lavanderie, gli unici bagni rimasti aperti vengono presi d'assalto e le prese di corrente all'aperto utilizzate per ricaricare gli smartphone. La ricerca dei cartoni per la notte, i nascondigli per i sacchi a pelo e la necessità di trovare qualcosa da mangiare fanno parte della quotidianità di questi ragazzi.\n\n\nFor any content use please feel free to contact licensing@ciaopeople.com\n\nEventuali permessi relativi all’utilizzo dei contenuti pubblicati possono essere richiesti a licensing@ciaopeople.com\n\nSe il video ti è piaciuto: http://fanpa.ge/ISCRIVITI-A-FANPAGE-IT\n\nCome attivare CORRETTAMENTE le notifiche, da qualsiasi smartphone: http://fanpa.ge/PROBLEMA-RISOLTO\n\nCommenta con noi le ultime notizie, entra in Community: http://fanpa.ge/FANPAGE-COMMUNITY\n\nFanpage.it è un giornale indipendente, sociale, partecipativo. Segui i nostri live, reportage, inchieste, storie e videonews. Partecipa con noi all'informazione.\n\nRimani connesso su Fanpage.it: \n:+1: Facebook: https://www.facebook.com/fanpage.it\n:camera_with_flash: Instagram: https://www.instagram.com/fanpage.it/\n:bird: Twitter: https://twitter.com/fanpage\n:heart: TikTok: https://vm.tiktok.com/CnNvFb/\n\nhttps://youmedia.fanpage.it/video/aa/XrhID-SwVPu55goI"
+        }
+      },
+      "statistics": {
+        "viewCount": "219109",
+        "likeCount": "5460",
+        "dislikeCount": "150",
+        "favoriteCount": "0",
+        "commentCount": "1523"
+      },
+      "player": {
+        "embedHtml": "\u003ciframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/UV-PCBVRhPA\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"
+      }
+    }
+  ]
+}

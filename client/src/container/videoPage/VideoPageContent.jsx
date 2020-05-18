@@ -7,6 +7,7 @@ import BoxMessagesItem from "../../components/videoPage/BoxMessagesItem.jsx";
 import MessageReplay from "../../components/videoPage/MessageReplay.jsx";
 import video from "./videoPageContent.json";
 import mess from "./messaggi.json";
+import videoInfo from "./videoInfo.json";
 
 const VideoPageContent = (props) => {
   return (
@@ -16,7 +17,16 @@ const VideoPageContent = (props) => {
           <Video src="https://www.youtube.com/embed/qqSH-nUm2aU" />
           <Row>
             <Col>
-              <BoxDescription />
+              <BoxDescription
+                channelName={videoInfo.items[0].snippet.channelTitle}
+                numberView={videoInfo.items[0].statistics.viewCount}
+                videoTitle={videoInfo.items[0].snippet.title}
+                numberSubscribers="2000000 hardcode"
+                publishedAt={videoInfo.items[0].snippet.publishedAt}
+                description={videoInfo.items[0].snippet.description}
+                likeCount={videoInfo.items[0].statistics.likeCount}
+                dislikeCount={videoInfo.items[0].statistics.dislikeCount}
+              />
             </Col>
           </Row>
           <Row>
@@ -29,9 +39,10 @@ const VideoPageContent = (props) => {
                   publishedAt,
                   textDisplay,
                   likeCount,
+                  id,
                 } = item.snippet.topLevelComment.snippet;
                 return (
-                  <div key={item.id}>
+                  <div key={id}>
                     <BoxMessagesItem
                       channelLink={authorChannelUrl}
                       imgLogo={authorProfileImageUrl}
@@ -43,14 +54,24 @@ const VideoPageContent = (props) => {
                     {item.replies && (
                       <MessageReplay>
                         {item.replies.comments.reverse().map((rep) => {
+                          const {
+                            authorChannelUrl,
+                            authorProfileImageUrl,
+                            authorDisplayName,
+                            publishedAt,
+                            textDisplay,
+                            likeCount,
+                            id,
+                          } = rep.snippet;
                           return (
                             <BoxMessagesItem
-                              channelLink={rep.snippet.authorChannelUrl}
-                              imgLogo={rep.snippet.authorProfileImageUrl}
-                              nickName={rep.snippet.authorDisplayName}
-                              publishedAt={rep.snippet.publishedAt}
-                              textDisplay={rep.snippet.textDisplay}
-                              likeCount={rep.snippet.likeCount}
+                              key={id}
+                              channelLink={authorChannelUrl}
+                              imgLogo={authorProfileImageUrl}
+                              nickName={authorDisplayName}
+                              publishedAt={publishedAt}
+                              textDisplay={textDisplay}
+                              likeCount={likeCount}
                             />
                           );
                         })}
