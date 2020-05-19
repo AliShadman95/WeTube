@@ -23,12 +23,7 @@ body {
   max-height: 100%;
 }
 
-.related-video-title {
-  color: #edf2f4;
-}
-
 .related-video-detail {
-  color: #8d99ae;
   font-size: 14px;
   padding-bottom: 0px;
 }
@@ -41,11 +36,9 @@ body {
 
 .related-video-small-title {
   font-weight: bold;
-  color: #edf2f4;
 }
 
 .related-video-small-detail {
-  color: #8d99ae;
   font-size: 12px;
   padding-bottom: 0px;
 }

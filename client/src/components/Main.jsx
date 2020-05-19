@@ -1,13 +1,12 @@
 import React from "react";
-import VideoContainer from "./homepage/homepageVideoContainer/HomepageVideoContainer.jsx";
+import HomepageVideoContainer from "./homepage/homepageVideoContainer/HomepageVideoContainer.jsx";
 
 function Main() {
   return (
     <div>
-      <h1>Wetube!</h1>
-      <VideoContainer />
-      <VideoContainer />
-      <VideoContainer />
+      <HomepageVideoContainer title="Sport" />
+      <HomepageVideoContainer title="Music" />
+      <HomepageVideoContainer title="News" />
     </div>
   );
 }

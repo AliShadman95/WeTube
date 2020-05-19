@@ -29,32 +29,32 @@ function RelatedVideo({
           <Row className="flex-column">
             {isSearchPage ? (
               <React.Fragment>
-                <Col className="related-video-title">
+                <Col className="related-video-title white-text">
                   <h5 style={{ marginBottom: "0px" }}>{titolo}</h5>
                 </Col>
                 <Row className="pb-3">
-                  <Col className="related-video-detail">
+                  <Col className="related-video-detail grey-text">
                     <span className="mr-3">{nomecanale}</span>
                     <span className="mr-3">{view} visualizzazioni</span>
                     <span className="mr-3">{data}</span>
                   </Col>
                 </Row>
-                <Col className="related-video-detail">
+                <Col className="related-video-detail grey-text">
                   <span>{description}</span>
                 </Col>
               </React.Fragment>
             ) : (
               <React.Fragment>
-                <Col className="related-video-small-title">
+                <Col className="related-video-small-title white-text">
                   <span>{titolo}</span>
                 </Col>
-                <Col className="related-video-small-detail">
+                <Col className="related-video-small-detail grey-text">
                   <span>{nomecanale}</span>
                 </Col>
-                <Col className="related-video-small-detail">
+                <Col className="related-video-small-detail grey-text">
                   <span>{view} visualizzazioni</span>
                 </Col>
-                <Col className="related-video-small-detail">
+                <Col className="related-video-small-detail grey-text">
                   <span>{data}</span>
                 </Col>
               </React.Fragment>
