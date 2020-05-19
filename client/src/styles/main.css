@@ -3,6 +3,14 @@ body {
   background-color: #2a2c41;
 }
 
+.white-text {
+  color: #edf2f4;
+}
+
+.grey-text {
+  color: #8d99ae;
+}
+
 /* Related Video */
 
 .related-video-container,
