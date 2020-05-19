@@ -17,8 +17,7 @@ function Menu() {
   //search for video
   const searchVideo = (event) => {
     event.preventDefault();
-    setInput(event.target.value);
-    console.log(event.target.value);
+    console.log("function called");
   };
 
   //switch language
@@ -59,9 +58,14 @@ function Menu() {
                 type="text"
                 placeholder={data.research}
                 className="mr-sm-2"
-                onChange={(event) => searchVideo(event)}
+                onChange={(event) => setInput(event.target.value)}
               />
-              <Button variant="outline-danger">{data.submit}</Button>
+              <Button
+                onClick={(event) => searchVideo(event)}
+                variant="outline-danger"
+              >
+                {data.submit}
+              </Button>
             </Form>
 
             <Nav.Link href="#trends">
