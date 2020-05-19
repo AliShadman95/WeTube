@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory, withRouter } from "react-router-dom";
 import logo from "./logo.png";
 import trends from "./trends.png";
 import Navbar from "react-bootstrap/Navbar";
@@ -10,14 +11,16 @@ import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 
 function Menu() {
+  const history = useHistory();
   const [language, setLanguage] = useState("en");
   const [data, setDataSource] = useState(languageDataEn);
   const [input, setInput] = useState("");
 
   //search for video
-  const searchVideo = (event) => {
-    event.preventDefault();
-    console.log("function called");
+  const searchVideo = () => {
+    if (input !== "") {
+      history.push(`/search/${input}`);
+    }
   };
 
   //switch language
@@ -60,10 +63,7 @@ function Menu() {
                 className="mr-sm-2"
                 onChange={(event) => setInput(event.target.value)}
               />
-              <Button
-                onClick={(event) => searchVideo(event)}
-                variant="outline-danger"
-              >
+              <Button onClick={searchVideo} variant="outline-danger">
                 {data.submit}
               </Button>
             </Form>

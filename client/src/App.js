@@ -12,9 +12,10 @@ import Menu from "./components/menu/Menu.jsx";
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
-        <Menu />
-        <Router>
+      <Router>
+        <div className="App">
+          <Menu />
+
           <Route path="/" exact component={Main} />
           <Route path="/trends" exact component={VerticalListPages} />
           <Route
@@ -23,8 +24,8 @@ function App() {
             component={VerticalListPages}
           />
           <Route path="/video" exact component={VideoPageContent} />
-        </Router>
-      </div>
+        </div>
+      </Router>
     </Provider>
   );
 }
