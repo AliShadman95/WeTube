@@ -5,12 +5,22 @@ import Nav from "react-bootstrap/Nav";
 import languageDataEn from "./en.json";
 import languageDataIt from "./it.json";
 import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import FormControl from "react-bootstrap/FormControl";
 
 function Menu() {
   const [language, setLanguage] = useState("en");
   const [data, setDataSource] = useState(languageDataEn);
+  const [input, setInput] = useState("");
 
-  // set up empty grid
+  //search for video
+  const searchVideo = (event) => {
+    event.preventDefault();
+    setInput(event.target.value);
+    console.log(event.target.value);
+  };
+
+  //switch language
   const switchLanguage = (lang) => {
     if (language === "en") {
       setLanguage("it");
@@ -33,8 +43,8 @@ function Menu() {
             style={{
               display: "flex",
               justifyContent: "flex-start",
-              heigth: 100,
-              width: 100,
+              heigth: 50,
+              width: 50,
             }}
             alt="logo"
             src={logo}
@@ -43,7 +53,16 @@ function Menu() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#search">{data.research}</Nav.Link>
+            <Form inline>
+              <FormControl
+                type="text"
+                placeholder={data.research}
+                className="mr-sm-2"
+                onChange={(event) => searchVideo(event)}
+              />
+              <Button variant="outline-success">{data.submit}</Button>
+            </Form>
+
             <Nav.Link href="#trends">{data.selection}</Nav.Link>
           </Nav>
           <Nav className="ml-auto">
