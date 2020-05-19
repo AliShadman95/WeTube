@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory, withRouter } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import logo from "./logo.png";
 import trends from "./trends.png";
 import Navbar from "react-bootstrap/Navbar";
