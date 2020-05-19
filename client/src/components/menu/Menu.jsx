@@ -38,7 +38,7 @@ function Menu() {
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             style={{
               display: "flex",
