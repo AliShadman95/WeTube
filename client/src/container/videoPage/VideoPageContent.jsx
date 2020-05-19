@@ -42,8 +42,9 @@ const VideoPageContent = (props) => {
                   id,
                 } = item.snippet.topLevelComment.snippet;
                 return (
-                  <div key={id}>
+                  <React.Fragment>
                     <BoxMessagesItem
+                      key={id}
                       channelLink={authorChannelUrl}
                       imgLogo={authorProfileImageUrl}
                       nickName={authorDisplayName}
@@ -77,7 +78,7 @@ const VideoPageContent = (props) => {
                         })}
                       </MessageReplay>
                     )}
-                  </div>
+                  </React.Fragment>
                 );
               })}
             </Col>

@@ -12,12 +12,12 @@ function BoxMessagesItem({
   return (
     <Container className="boxMessagesItem-container white-text">
       <Row>
-        <Col xs="1" className="boxMessagesItem-pd-zero">
+        <Col xs="3" sm="2" md="2" lg="1" className="boxMessagesItem-pd-zero">
           <a href={channelLink}>
             <img id="boxMessagesItem-img" src={imgLogo} alt="logo" />
           </a>
         </Col>
-        <Col xs="7">
+        <Col xs="8" sm="9" md="10" lg="11">
           <Row>
             <Col className="boxMessagesItem-pd-zero">
               <p>
