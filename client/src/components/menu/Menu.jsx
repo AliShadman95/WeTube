@@ -61,7 +61,7 @@ function Menu() {
                 className="mr-sm-2"
                 onChange={(event) => searchVideo(event)}
               />
-              <Button variant="outline-success">{data.submit}</Button>
+              <Button variant="outline-danger">{data.submit}</Button>
             </Form>
 
             <Nav.Link href="#trends">
