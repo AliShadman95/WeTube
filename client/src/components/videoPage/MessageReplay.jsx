@@ -7,8 +7,8 @@ function MessageReplay(props) {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div style={{ paddingLeft: "80px" }}>
-      <button onClick={toggle} style={{ marginBottom: "1rem", border: "none" }}>
+    <div id="messageReplay-container">
+      <button id="messageReplay-btn" onClick={toggle}>
         <b>Visualizza risposte</b>
       </button>
       <Collapse isOpen={isOpen}>{props.children}</Collapse>
