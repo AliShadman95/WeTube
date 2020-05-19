@@ -10,27 +10,31 @@ function BoxMessagesItem({
   likeCount,
 }) {
   return (
-    <Container>
+    <Container className="boxMessagesItem-container white-text">
       <Row>
-        <Col xs="1">
+        <Col xs="1" className="boxMessagesItem-pd-zero">
           <a href={channelLink}>
-            <img style={{ borderRadius: "50%" }} src={imgLogo} alt="logo" />
+            <img id="boxMessagesItem-img" src={imgLogo} alt="logo" />
           </a>
         </Col>
         <Col xs="7">
           <Row>
-            <Col xs="6">
+            <Col className="boxMessagesItem-pd-zero">
               <p>
-                <b>{nickName}</b>
+                <b>
+                  {nickName} {"-"} {publishedAt}
+                </b>
               </p>
             </Col>
-            <Col xs="6">{publishedAt}</Col>
           </Row>
           <Row>
             <p>{textDisplay}</p>
           </Row>
           <Row>
-            <p>{likeCount} Like</p>
+            <p className="grey-text">
+              <i class="material-icons grey-text">thumb_up</i>
+              {" " + likeCount}
+            </p>
           </Row>
         </Col>
       </Row>

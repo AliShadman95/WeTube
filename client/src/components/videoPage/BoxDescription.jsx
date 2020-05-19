@@ -16,60 +16,63 @@ function BoxDescription({
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Container className="themed-container" fluid={true}>
+    <Container
+      className="themed-container white-text boxDescription-container"
+      fluid={true}
+    >
       <Row>
-        <Col xs="12">
+        <Col>
           <h6>
             <b>{videoTitle}</b>
           </h6>
         </Col>
       </Row>
+
       <Row>
-        <Col>
+        <Col xs="9" className="grey-text">
           <p>
             {numberView} visualizzazioni - {publishedAt}
           </p>
         </Col>
-        <Col>
+        <Col xs="3" className="grey-text">
           <div>
-            <span>
-              <i class="material-icons">thumb_up</i>
-            </span>
-            <span>{likeCount}</span>
-            <span>
-              <i class="material-icons">thumb_down</i>
-            </span>
-            <span>{dislikeCount}</span>
+            <i class="material-icons boxDescription-icon">thumb_up</i>
+            {likeCount}
+            <i class="material-icons boxDescription-icon">thumb_down</i>
+            {dislikeCount}
           </div>
         </Col>
       </Row>
-      <Row>
+      <Row className="boxDescription-border-bt">
+        <Col></Col>
+      </Row>
+      <Row className="boxDescription-border-bt">
         <Col>
-          <hr></hr>
-          <div>
-            <Container>
+          <Container id="boxDescription-channel">
+            <Row>
+              <Col xs="1">icona</Col>
+              <Col>
+                <b>{channelName}</b>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="grey-text">{numberSubscribers} di iscritti</Col>
+            </Row>
+            <button
+              id="boxDescription-btn"
+              className="grey-text"
+              onClick={toggle}
+            >
+              <b>Mostra altro</b>
+            </button>
+            <Collapse isOpen={isOpen}>
               <Row>
-                <Col>icona</Col>
                 <Col>
-                  {channelName} {numberSubscribers} di iscritti
+                  <p>{description}</p>
                 </Col>
               </Row>
-              <button
-                onClick={toggle}
-                style={{ marginBottom: "1rem", border: "none" }}
-              >
-                <b>Mostra altro</b>
-              </button>
-              <Collapse isOpen={isOpen}>
-                <Row>
-                  <Col>
-                    <p>{description}</p>
-                  </Col>
-                </Row>
-              </Collapse>
-            </Container>
-          </div>
-          <hr></hr>
+            </Collapse>
+          </Container>
         </Col>
       </Row>
     </Container>

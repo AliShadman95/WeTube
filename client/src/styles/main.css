@@ -1,7 +1,7 @@
 /* General */
 body {
-  background-color: #2a2c41;
   font-family: "Oxygen", sans-serif;
+  background-color: rgb(24, 24, 24);
 }
 
 .white-text {
@@ -61,4 +61,63 @@ body {
 .related-video-small-detail {
   font-size: 12px;
   padding-bottom: 0px;
+}
+
+/* BoxDescription */
+
+.boxDescription-container {
+  font-size: 13px;
+  padding: 7px 5px;
+}
+
+.boxDescription-border-bt {
+  border-bottom: 1px solid rgb(68, 68, 68);
+  margin: 0px 10px;
+}
+
+#boxDescription-channel {
+  padding: 10px;
+}
+
+.boxDescription-icon {
+  margin: 0px 5px;
+}
+
+#boxDescription-btn {
+  margin: 7px 0px;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+  outline: none;
+}
+
+/* BoxMessagesItem */
+
+.boxMessagesItem-container {
+  font-size: 13px;
+  padding: 5px 0px 2px 25px;
+}
+
+#boxMessagesItem-img {
+  border-radius: 50%;
+}
+
+.boxMessagesItem-pd-zero {
+  padding: 0;
+}
+
+/* MessageReplay */
+
+#messageReplay-container {
+  padding-left: 68px;
+  padding-bottom: 35px;
+}
+
+#messageReplay-btn {
+  font-size: 12px;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+  outline: none;
+  color: rgb(69, 168, 252);
 }
