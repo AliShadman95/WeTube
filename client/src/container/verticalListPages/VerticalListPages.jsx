@@ -2,31 +2,32 @@ import React, { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import RelatedVideo from "../../commons/relatedVideo/RelatedVideo";
 import video from "../videoPage/videoPageContent.json";
+import { connect } from "react-redux";
+import { getVideos } from "../actions/videoActions";
 
-function VerticalListPages({ match }) {
+function VerticalListPages({ match, getVideos, videoTrendsList }) {
   useEffect(() => {
     if (match.params.searchValue) {
       // Need to search with value
       console.log("there is id");
     } else {
-      // Need to get trends
-      console.log("no id");
+      getVideos();
     }
   }, [match]);
   return (
     <Container fluid className="mt-3">
       <Row>
-        {video.othervideo.map((video) => (
+        {videoTrendsList.items.map((video) => (
           <Col md="12" className="mb-2" key={video.id}>
             <RelatedVideo
               id={video.id}
               isSearchPage
-              src={video.src}
-              titolo={video.titolo}
-              nomecanale={video.nomecanale}
-              view={video.view}
-              data={video.data}
-              description={video.description}
+              src={video.snippet.thumbnails.medium.url}
+              titolo={video.snippet.title}
+              nomecanale={video.snippet.channelTitle}
+              view={video.statistics.viewCount}
+              data={video.snippet.publishedAt}
+              description={video.snippet.description}
             />
           </Col>
         ))}
@@ -34,5 +35,11 @@ function VerticalListPages({ match }) {
     </Container>
   );
 }
+const mapStateToProps = (state) => {
+  console.log(state);
+  return {
+    videoTrendsList: state.items,
+  };
+};
 
-export default VerticalListPages;
+export default connect(mapStateToProps, { getVideos })(VerticalListPages);

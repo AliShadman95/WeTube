@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
-import rootReducer from "../container/reducers/rootReducer.js";
+import rootReducer from "../container/reducers/videoReducer.js";
 
 const initialState = {};
 
@@ -10,10 +10,8 @@ const store = createStore(
   rootReducer,
   initialState,
   compose(
-    applyMiddleware(
-      ...middleware
-    ) /* ,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() */
+    applyMiddleware(...middleware),
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   )
 );
 

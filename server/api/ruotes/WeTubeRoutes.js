@@ -1,9 +1,9 @@
 "use strict";
 module.exports = (app) => {
   var weTube = require("../controllers/weTube");
-
-  app.route("/videos/:videoId").get(weTube.get_single_video);
   app.route("/videos/most-popular").get(weTube.list_most_popular_videos);
+  app.route("/videos/:videoId").get(weTube.get_single_video);
+
   app
     .route("/videos/most-popular/:categoryId")
     .get(weTube.list_most_popular_videos);

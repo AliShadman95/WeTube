@@ -5,7 +5,7 @@ exports.list_most_popular_videos = async (req, res) => {
   let id = req.params.categoryId;
   try {
     let data = await axios.get(
-      `https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&fields=items%2Fid%2Citems%2Fsnippet%2FpublishedAt%2C%20items%2Fsnippet%2FchannelId%2Citems%2Fsnippet%2Ftitle%2Citems%2Fsnippet%2Fdescription%20%2C%20items%2Fsnippet%2Fthumbnails%2C%20items%2Fsnippet%2FchannelTitle%20%2C%20items%2Fsnippet%2Ftags&maxResults=50&regionCode=IT&${
+      `https://www.googleapis.com/youtube/v3/videos?part=snippet%20%2C%20statistics&chart=mostPopular&fields=items%2Fid%2Citems%2Fsnippet%2FpublishedAt%2C%20items%2Fsnippet%2FchannelId%2Citems%2Fsnippet%2Ftitle%2Citems%2Fsnippet%2Fdescription%20%2C%20items%2Fsnippet%2Fthumbnails%2C%20items%2Fsnippet%2FchannelTitle%20%2C%20items%2Fsnippet%2Ftags%20%2C%20items%2Fstatistics&maxResults=50&regionCode=IT&${
         typeof id !== "undefined" ? `videoCategoryId=${id}&` : ""
       }key=${apiKey}`
     );
