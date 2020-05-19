@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "./logo.png";
+import trends from "./trends.png";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import languageDataEn from "./en.json";
@@ -63,7 +64,16 @@ function Menu() {
               <Button variant="outline-success">{data.submit}</Button>
             </Form>
 
-            <Nav.Link href="#trends">{data.selection}</Nav.Link>
+            <Nav.Link href="#trends">
+              <img
+                style={{
+                  heigth: 50,
+                  width: 50,
+                }}
+                alt="logo"
+                src={trends}
+              ></img>
+            </Nav.Link>
           </Nav>
           <Nav className="ml-auto">
             <Button variant="dark" onClick={() => switchLanguage(language)}>
