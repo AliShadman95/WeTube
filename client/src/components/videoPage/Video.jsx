@@ -19,9 +19,9 @@ function Video({ src }) {
           height: "100%",
         }}
         src={src}
-        frameborder="1"
+        frameBorder="1"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
     </div>
   );

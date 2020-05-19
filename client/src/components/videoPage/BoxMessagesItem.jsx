@@ -32,7 +32,7 @@ function BoxMessagesItem({
           </Row>
           <Row>
             <p className="grey-text">
-              <i class="material-icons grey-text">thumb_up</i>
+              <i className="material-icons grey-text">thumb_up</i>
               {" " + likeCount}
             </p>
           </Row>

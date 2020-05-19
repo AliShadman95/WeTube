@@ -36,9 +36,9 @@ function BoxDescription({
         </Col>
         <Col xs="3" className="grey-text">
           <div>
-            <i class="material-icons boxDescription-icon">thumb_up</i>
+            <i className="material-icons boxDescription-icon">thumb_up</i>
             {likeCount}
-            <i class="material-icons boxDescription-icon">thumb_down</i>
+            <i className="material-icons boxDescription-icon">thumb_down</i>
             {dislikeCount}
           </div>
         </Col>

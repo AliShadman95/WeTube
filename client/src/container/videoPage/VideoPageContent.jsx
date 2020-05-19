@@ -21,7 +21,7 @@ const VideoPageContent = (props) => {
                 channelName={videoInfo.items[0].snippet.channelTitle}
                 numberView={videoInfo.items[0].statistics.viewCount}
                 videoTitle={videoInfo.items[0].snippet.title}
-                numberSubscribers="2000000 hardcode"
+                numberSubscribers="2000001"
                 publishedAt={videoInfo.items[0].snippet.publishedAt}
                 description={videoInfo.items[0].snippet.description}
                 likeCount={videoInfo.items[0].statistics.likeCount}
@@ -39,12 +39,10 @@ const VideoPageContent = (props) => {
                   publishedAt,
                   textDisplay,
                   likeCount,
-                  id,
                 } = item.snippet.topLevelComment.snippet;
                 return (
-                  <React.Fragment>
+                  <React.Fragment key={item.snippet.topLevelComment.id}>
                     <BoxMessagesItem
-                      key={id}
                       channelLink={authorChannelUrl}
                       imgLogo={authorProfileImageUrl}
                       nickName={authorDisplayName}
@@ -62,11 +60,10 @@ const VideoPageContent = (props) => {
                             publishedAt,
                             textDisplay,
                             likeCount,
-                            id,
                           } = rep.snippet;
                           return (
                             <BoxMessagesItem
-                              key={id}
+                              key={rep.id}
                               channelLink={authorChannelUrl}
                               imgLogo={authorProfileImageUrl}
                               nickName={authorDisplayName}

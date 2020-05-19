@@ -254,38 +254,6 @@
           }
         ]
       }
-    },
-    {
-      "kind": "youtube#commentThread",
-      "etag": "S7LFtWm6tRKw-FCyjYhgajrOW1o",
-      "id": "UgxHPlnqI1MCAX3usot4AaABAg",
-      "snippet": {
-        "videoId": "UV-PCBVRhPA",
-        "topLevelComment": {
-          "kind": "youtube#comment",
-          "etag": "m_ldus326ny0dLeWTKr-OkSiriI",
-          "id": "UgxHPlnqI1MCAX3usot4AaABAg",
-          "snippet": {
-            "videoId": "UV-PCBVRhPA",
-            "textDisplay": "questi ragazzi ridono e vanno avanti ,anche in questa situazione, sono dei guerrieri. spero che un giorno si possano riprendere",
-            "textOriginal": "questi ragazzi ridono e vanno avanti ,anche in questa situazione, sono dei guerrieri. spero che un giorno si possano riprendere",
-            "authorDisplayName": "Marco Santoni",
-            "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJz1TdKx2ZBlQRyxhSo_TqmLMooJUChcu-amzQ=s48-c-k-c0xffffffff-no-rj-mo",
-            "authorChannelUrl": "http://www.youtube.com/channel/UClx_v1VxkcjfeIwwLJeyKDg",
-            "authorChannelId": {
-              "value": "UClx_v1VxkcjfeIwwLJeyKDg"
-            },
-            "canRate": true,
-            "viewerRating": "none",
-            "likeCount": 524,
-            "publishedAt": "2020-05-14T12:34:05Z",
-            "updatedAt": "2020-05-14T12:34:05Z"
-          }
-        },
-        "canReply": true,
-        "totalReplyCount": 3,
-        "isPublic": true
-      }
     }
   ]
 }
