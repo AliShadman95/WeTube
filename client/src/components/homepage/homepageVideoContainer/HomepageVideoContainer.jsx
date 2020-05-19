@@ -15,6 +15,7 @@ function HomepageVideoContainer({ title }) {
               title="Ezio Bosso: Rain, In Your Black Eyes"
               channelTitle="Ezio Bosso"
               date="03/11/2020"
+              views="30000 visualizzazioni"
             />
           );
         })}

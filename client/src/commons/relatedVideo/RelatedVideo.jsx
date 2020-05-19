@@ -15,7 +15,7 @@ function RelatedVideo({
   return (
     <Container
       style={{ padding: "5px" }}
-      className={isHovered ? "related-video-hover" : ""}
+      className={isHovered ? "related-video-hover clickable" : ""}
       onMouseEnter={() => {
         setIsHovered(true);
       }}

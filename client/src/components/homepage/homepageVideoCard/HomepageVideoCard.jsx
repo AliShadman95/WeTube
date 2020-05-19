@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 
-function HomepageVideoCard({ src, title, channelTitle, date }) {
+function HomepageVideoCard({ src, title, channelTitle, date, views }) {
+  const [isHovered, setIsHovered] = useState(false);
   return (
-    <Card className="ml-3">
+    <Card
+      className={`ml-4 hp-video-card ${isHovered ? "clickable" : ""}`}
+      onMouseEnter={() => {
+        setIsHovered(true);
+      }}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <Card.Img variant="top" src={src} />
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>{channelTitle}</Card.Text>
-        <Card.Text>{date}</Card.Text>
+        <Card.Text className="white-text hp-card-title">{title}</Card.Text>
+        <Card.Text className="grey-text hp-card-detail">
+          {channelTitle}
+        </Card.Text>
+        <Card.Text className="grey-text hp-card-detail">{views}</Card.Text>
+        <Card.Text className="grey-text hp-card-detail">{date}</Card.Text>
       </Card.Body>
     </Card>
   );
