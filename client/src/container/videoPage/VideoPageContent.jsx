@@ -86,7 +86,7 @@ const VideoPageContent = (props) => {
           {video.othervideo.map((video) => (
             <RelatedVideo
               key={video.id}
-              src={video.srcSmall}
+              src={video.src}
               titolo={video.titolo}
               nomecanale={video.nomecanale}
               view={video.view}

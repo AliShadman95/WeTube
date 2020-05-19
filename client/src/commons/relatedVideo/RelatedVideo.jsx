@@ -15,17 +15,26 @@ function RelatedVideo({
   return (
     <Container
       style={{ padding: "5px" }}
-      className={isHovered && "related-video-hover"}
+      className={isHovered ? "related-video-hover clickable" : ""}
       onMouseEnter={() => {
         setIsHovered(true);
       }}
       onMouseLeave={() => setIsHovered(false)}
     >
       <Row>
-        <Col md="3" className="align-self-center">
-          <img src={src} className="related-video-thumbnail"></img>
+        <Col md={isSearchPage ? "3" : "5"} className="align-self-center">
+          {isSearchPage ? (
+            <img src={src} className="related-video-thumbnail"></img>
+          ) : (
+            <div className="related-video-img-container">
+              <img src={src} className="related-video-thumbnail"></img>
+            </div>
+          )}
         </Col>
-        <Col md="6" className="related-video-container">
+        <Col
+          md="6"
+          className={`related-video-container ${!isSearchPage ? "ml-1" : ""}`}
+        >
           <Row className="flex-column">
             {isSearchPage ? (
               <React.Fragment>

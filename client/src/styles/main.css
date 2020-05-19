@@ -1,5 +1,6 @@
 /* General */
 body {
+  font-family: "Oxygen", sans-serif;
   background-color: rgb(24, 24, 24);
 }
 
@@ -11,7 +12,32 @@ body {
   color: #8d99ae;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
+/*  Homepage Card */
+
+.hp-video-card {
+  background-color: rgb(24, 24, 24);
+  border: none;
+}
+
+.hp-card-title {
+  max-height: 4rem;
+  margin: 0px;
+}
+
+.hp-card-detail {
+  margin: 0px;
+}
+
 /* Related Video */
+
+.related-video-img-container {
+  width: 168px;
+  height: 94px;
+}
 
 .related-video-container,
 .related-video-container > div > div {
@@ -23,15 +49,17 @@ body {
   max-height: 100%;
 }
 
+.related-video-title {
+}
+
 .related-video-detail {
   font-size: 14px;
   padding-bottom: 0px;
 }
 
 .related-video-hover {
-  background-color: rgb(47, 50, 82);
+  background-color: rgb(14, 13, 13);
   border-radius: 5px;
-  cursor: pointer;
 }
 
 .related-video-small-title {

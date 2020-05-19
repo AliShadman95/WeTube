@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
-import image from "./img/ezioBosso.jpeg";
 
-function VideoCard() {
+function HomepageVideoCard({ src, title, channelTitle, date, views }) {
+  const [isHovered, setIsHovered] = useState(false);
   return (
-    <Card>
-      <Card.Img variant="top" src={image} />
+    <Card
+      className={`ml-4 hp-video-card ${isHovered ? "clickable" : ""}`}
+      onMouseEnter={() => {
+        setIsHovered(true);
+      }}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <Card.Img variant="top" src={src} />
       <Card.Body>
-        <Card.Title>Ezio Bosso: Rain, In Your Black Eyes</Card.Title>
-        <Card.Text>Ezio Bosso</Card.Text>
-        <Card.Text>Data di Pubblicazione</Card.Text>
+        <Card.Text className="white-text hp-card-title">{title}</Card.Text>
+        <Card.Text className="grey-text hp-card-detail">
+          {channelTitle}
+        </Card.Text>
+        <Card.Text className="grey-text hp-card-detail">{views}</Card.Text>
+        <Card.Text className="grey-text hp-card-detail">{date}</Card.Text>
       </Card.Body>
     </Card>
   );
 }
 
-export default VideoCard;
+export default HomepageVideoCard;
