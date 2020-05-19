@@ -3,23 +3,27 @@ import { Container, Row, Col } from "reactstrap";
 import RelatedVideo from "../../commons/relatedVideo/RelatedVideo";
 import video from "../videoPage/videoPageContent.json";
 import { connect } from "react-redux";
-import { getVideos } from "../actions/videoActions";
+import { getPopularVideos, getVideosBySearch } from "../actions/videoActions";
 
-function VerticalListPages({ match, getVideos, videoTrendsList }) {
-  console.log(videoTrendsList);
+function VerticalListPages({
+  match,
+  getPopularVideos,
+  getVideosBySearch,
+  videoList,
+}) {
   useEffect(() => {
     if (match.params.searchValue) {
       // Need to search with value
-      console.log("there is id");
+      getVideosBySearch(match.params.searchValue);
     } else {
-      getVideos();
+      getPopularVideos();
     }
   }, [match]);
   return (
     <Container fluid className="mt-3">
       <Row>
-        {typeof videoTrendsList !== "undefined" &&
-          videoTrendsList.items.map((video) => (
+        {typeof videoList !== "undefined" &&
+          videoList.items.map((video) => (
             <Col md="12" className="mb-2" key={video.id}>
               <RelatedVideo
                 id={video.id}
@@ -27,9 +31,12 @@ function VerticalListPages({ match, getVideos, videoTrendsList }) {
                 src={video.snippet.thumbnails.medium.url}
                 titolo={video.snippet.title}
                 nomecanale={video.snippet.channelTitle}
-                view={video.statistics.viewCount}
+                view={video.statistics ? video.statistics.viewCount : ""}
                 data={video.snippet.publishedAt}
-                description={video.snippet.description}
+                description={video.snippet.description
+                  .split(" ")
+                  .slice(0, 20)
+                  .join(" ")}
               />
             </Col>
           ))}
@@ -40,8 +47,11 @@ function VerticalListPages({ match, getVideos, videoTrendsList }) {
 const mapStateToProps = (state) => {
   console.log(state);
   return {
-    videoTrendsList: state.items,
+    videoList: state.items,
   };
 };
 
-export default connect(mapStateToProps, { getVideos })(VerticalListPages);
+export default connect(mapStateToProps, {
+  getPopularVideos,
+  getVideosBySearch,
+})(VerticalListPages);

@@ -20,7 +20,7 @@ exports.list_videos_by_search = async (req, res) => {
   let searchValue = req.params.title;
   try {
     let data = await axios.get(
-      `https://www.googleapis.com/youtube/v3/search?part=snippet&order=relevance&q=${searchValue}&fields=items%2Fid%2FvideoId%2Citems%2Fsnippet%2FpublishedAt%20%2C%20items%2Fsnippet%2FchannelId%2C%20items%2Fsnippet%2FchannelId%20%2C%20items%2Fsnippet%2Fdescription%20%2C%20items%2Fsnippet%2Fthumbnails%20%2C%20items%2Fsnippet%2FchannelTitle&type=video&regionCode=IT&key=${apiKey}`
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&order=relevance&q=${searchValue}&fields=items%2Fid%2FvideoId%2Citems%2Fsnippet%2FpublishedAt%20%2C%20items%2Fsnippet%2FchannelId%2C%20items%2Fsnippet%2FchannelId%20%2C%20items%2Fsnippet%2Fdescription%20%2C%20items%2Fsnippet%2Fthumbnails%20%2C%20items%2Fsnippet%2FchannelTitle%20%2C%20items%2Fsnippet%2Ftitle&type=video&regionCode=IT&key=${apiKey}`
     );
 
     res.send(data.data);
