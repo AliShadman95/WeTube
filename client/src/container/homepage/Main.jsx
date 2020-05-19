@@ -1,5 +1,5 @@
 import React from "react";
-import HomepageVideoContainer from "./homepage/homepageVideoContainer/HomepageVideoContainer.jsx";
+import HomepageVideoContainer from "../../components/homepage/homepageVideoContainer/HomepageVideoContainer.jsx";
 
 function Main() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import Main from "./components/Main";
+import Main from "./container/homepage/Main";
 import VideoPageContent from "./container/videoPage/VideoPageContent.jsx";
-import SearchPageContent from "./container/searchPage/SearchPageContent.jsx";
+import VerticalListPages from "./container/verticalListPages/VerticalListPages.jsx";
 
 import "./styles/main.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -16,7 +16,12 @@ function App() {
         <Menu />
         <Router>
           <Route path="/" exact component={Main} />
-          <Route path="/search/:videoId" exact component={SearchPageContent} />
+          <Route path="/trends" exact component={VerticalListPages} />
+          <Route
+            path="/search/:searchValue"
+            exact
+            component={VerticalListPages}
+          />
           <Route path="/video" exact component={VideoPageContent} />
         </Router>
       </div>
