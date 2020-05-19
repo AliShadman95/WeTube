@@ -62,6 +62,11 @@ function Menu() {
                 placeholder={data.research}
                 className="mr-sm-2"
                 onChange={(event) => setInput(event.target.value)}
+                onKeyDown={(event) => {
+                  if (event.keyCode === 13) {
+                    searchVideo();
+                  }
+                }}
               />
               <Button onClick={searchVideo} variant="outline-danger">
                 {data.submit}
