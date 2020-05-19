@@ -68,7 +68,7 @@ function Menu() {
               </Button>
             </Form>
 
-            <Nav.Link href="#trends">
+            <Nav.Link href="/trends">
               <img
                 style={{
                   heigth: 50,
