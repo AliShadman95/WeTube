@@ -7,7 +7,7 @@ function Main({
   getVideosByCategory,
   videoSportList,
   videoMusicList,
-  videoAnimalsList,
+  videoGamingList,
 }) {
   useEffect(() => {
     getVideosByCategory("17");
@@ -17,17 +17,24 @@ function Main({
 
   return (
     <div>
-      <HomepageVideoContainer title="Sport" />
-      <HomepageVideoContainer title="Music" />
-      <HomepageVideoContainer title="News" />
+      <HomepageVideoContainer title="Sport" videoList={videoSportList} />
+      <HomepageVideoContainer title="Music" videoList={videoMusicList} />
+      <HomepageVideoContainer title="Gaming" videoList={videoGamingList} />
     </div>
   );
 }
 const mapStateToProps = (state) => {
+  console.log(state.videos.itemsByCategory);
   return {
-    videoSportList: state.itemsByCategory,
-    videoMusicList: state.itemsByCategory,
-    videoAnimalsList: state.itemsByCategory,
+    videoSportList: state.videos.itemsByCategory.find((e) => {
+      return e.category === "sport";
+    }),
+    videoMusicList: state.videos.itemsByCategory.find((e) => {
+      return e.category === "music";
+    }),
+    videoGamingList: state.videos.itemsByCategory.find((e) => {
+      return e.category === "gaming";
+    }),
   };
 };
 
