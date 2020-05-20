@@ -7,8 +7,11 @@ import BoxMessagesItem from "../../components/videoPage/BoxMessagesItem.jsx";
 import MessageReplay from "../../components/videoPage/MessageReplay.jsx";
 import axios from "axios";
 import parse from "html-react-parser";
+import { useHistory } from "react-router-dom";
 
 function VideoPageContent({ match }) {
+  const history = useHistory();
+
   const [videoDetails, setVideoDetails] = useState([]);
   const [videoComments, setVideoComments] = useState([]);
   const [videoRelated, setVideoRelated] = useState([]);
@@ -33,10 +36,17 @@ function VideoPageContent({ match }) {
     }
 
     fetchData();
-  }, []);
+  }, [match.params.id]);
+
+  function openVideo(id) {
+    console.log(id);
+    if (id !== "") {
+      history.push(`/video/${id}`);
+    }
+  }
 
   return (
-    <Container fluid={true}>
+    <Container>
       <Row>
         <Col xs="8" style={{ padding: "10px" }}>
           <Video src={`https://www.youtube.com/embed/${match.params.id}`} />
@@ -115,6 +125,7 @@ function VideoPageContent({ match }) {
             videoRelated.length > 0 &&
             videoRelated.map((video) => (
               <RelatedVideo
+                onClick={() => openVideo(video.id.videoId)}
                 key={video.id.videoId}
                 src={video.snippet.thumbnails.medium.url}
                 titolo={video.snippet.title}

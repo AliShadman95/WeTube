@@ -9,6 +9,7 @@ function RelatedVideo({
   data,
   isSearchPage,
   description,
+  onClick,
 }) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -20,9 +21,14 @@ function RelatedVideo({
         setIsHovered(true);
       }}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={onClick}
     >
       <Row>
-        <Col md={isSearchPage ? "3" : "5"} className="align-self-center">
+        <Col
+          xl={isSearchPage ? "3" : "6"}
+          lg="12"
+          className="align-self-center"
+        >
           {isSearchPage ? (
             <img src={src} className="related-video-thumbnail"></img>
           ) : (
@@ -32,7 +38,8 @@ function RelatedVideo({
           )}
         </Col>
         <Col
-          md="6"
+          xl="5"
+          lg="auto"
           className={`related-video-container ${!isSearchPage ? "ml-1" : ""}`}
         >
           <Row className="flex-column">
