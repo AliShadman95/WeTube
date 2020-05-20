@@ -24,11 +24,7 @@ function RelatedVideo({
       onClick={onClick}
     >
       <Row>
-        <Col
-          xl={isSearchPage ? "3" : "6"}
-          lg="12"
-          className="align-self-center"
-        >
+        <Col xl={isSearchPage ? "3" : "6"} md="5" className="align-self-center">
           {isSearchPage ? (
             <img src={src} className="related-video-thumbnail"></img>
           ) : (
@@ -39,7 +35,7 @@ function RelatedVideo({
         </Col>
         <Col
           xl="5"
-          lg="auto"
+          xs="6"
           className={`related-video-container ${!isSearchPage ? "ml-1" : ""}`}
         >
           <Row className="flex-column">
