@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import { getVideosByCategory } from "../actions/videoActions";
 import HomepageVideoContainer from "../../components/homepage/homepageVideoContainer/HomepageVideoContainer.jsx";
 
-function Main() {
+function Main({
+  getVideosByCategory,
+  videoSportList,
+  videoMusicList,
+  videoAnimalsList,
+}) {
+  useEffect(() => {
+    getVideosByCategory("17");
+    getVideosByCategory("10");
+    getVideosByCategory("30");
+  }, []);
+
   return (
     <div>
       <HomepageVideoContainer title="Sport" />
@@ -10,5 +23,13 @@ function Main() {
     </div>
   );
 }
+const mapStateToProps = (state) => {
+  console.log(state.itemsByCategory);
+  return {
+    videoSportList: state.itemsByCategory,
+    videoMusicList: state.itemsByCategory,
+    videoAnimalsList: state.itemsByCategory,
+  };
+};
 
-export default Main;
+export default connect(mapStateToProps, { getVideosByCategory })(Main);
