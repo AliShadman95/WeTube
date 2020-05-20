@@ -15,6 +15,10 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.get("/", (req, res) => {
+  res.send({ express: "YOUR EXPRESS BACKEND IS CONNECTED TO REACT" });
+});
+
 var routes = require("./api/ruotes/WeTubeRoutes"); //importing routes
 routes(app); //register the routes
 
