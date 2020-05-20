@@ -23,7 +23,7 @@ function App() {
             exact
             component={VerticalListPages}
           />
-          <Route path="/video" exact component={VideoPageContent} />
+          <Route path="/video/:id" exact component={VideoPageContent} />
         </div>
       </Router>
     </Provider>

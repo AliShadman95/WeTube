@@ -9,6 +9,7 @@ function RelatedVideo({
   data,
   isSearchPage,
   description,
+  onClick,
 }) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -20,9 +21,10 @@ function RelatedVideo({
         setIsHovered(true);
       }}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={onClick}
     >
       <Row>
-        <Col md={isSearchPage ? "3" : "5"} className="align-self-center">
+        <Col xl={isSearchPage ? "3" : "6"} md="5" className="align-self-center">
           {isSearchPage ? (
             <img src={src} className="related-video-thumbnail"></img>
           ) : (
@@ -32,7 +34,8 @@ function RelatedVideo({
           )}
         </Col>
         <Col
-          md="6"
+          xl="5"
+          xs="6"
           className={`related-video-container ${!isSearchPage ? "ml-1" : ""}`}
         >
           <Row className="flex-column">
@@ -47,7 +50,6 @@ function RelatedVideo({
                     {view !== "" && (
                       <span className="mr-3">{view} visualizzazioni</span>
                     )}
-
                     <span className="mr-3">{data}</span>
                   </Col>
                 </Row>
@@ -64,7 +66,9 @@ function RelatedVideo({
                   <span>{nomecanale}</span>
                 </Col>
                 <Col className="related-video-small-detail grey-text">
-                  <span>{view} visualizzazioni</span>
+                  {view !== "" && (
+                    <span className="mr-3">{view} visualizzazioni</span>
+                  )}
                 </Col>
                 <Col className="related-video-small-detail grey-text">
                   <span>{data}</span>

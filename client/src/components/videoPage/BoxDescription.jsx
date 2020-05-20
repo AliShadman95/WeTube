@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Collapse } from "reactstrap";
+import Linkify from "react-linkify";
 
 function BoxDescription({
   channelName,
@@ -68,7 +69,9 @@ function BoxDescription({
             <Collapse isOpen={isOpen}>
               <Row>
                 <Col>
-                  <p>{description}</p>
+                  <Linkify>
+                    <p>{description}</p>
+                  </Linkify>
                 </Col>
               </Row>
             </Collapse>

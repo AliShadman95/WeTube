@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
-import rootReducer from "../container/reducers/videoReducer.js";
+import rootReducer from "../container/reducers/index";
 
 const initialState = {};
 

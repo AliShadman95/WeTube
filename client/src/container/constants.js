@@ -1,1 +1,2 @@
 export const GET_VIDEOS = "GET_VIDEOS";
+export const GET_VIDEOS_BY_CATEGORY = "GET_VIDEOS_BY_CATEGORY";

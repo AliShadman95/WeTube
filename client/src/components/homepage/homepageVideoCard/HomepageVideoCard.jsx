@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 
-function HomepageVideoCard({ src, title, channelTitle, date, views }) {
+function HomepageVideoCard({ src, title, channelTitle, date, views, onClick }) {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <Card
@@ -10,6 +10,7 @@ function HomepageVideoCard({ src, title, channelTitle, date, views }) {
         setIsHovered(true);
       }}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={onClick}
     >
       <Card.Img variant="top" src={src} />
       <Card.Body>
@@ -17,7 +18,9 @@ function HomepageVideoCard({ src, title, channelTitle, date, views }) {
         <Card.Text className="grey-text hp-card-detail">
           {channelTitle}
         </Card.Text>
-        <Card.Text className="grey-text hp-card-detail">{views}</Card.Text>
+        <Card.Text className="grey-text hp-card-detail">
+          {views + " visualizzazioni"}
+        </Card.Text>
         <Card.Text className="grey-text hp-card-detail">{date}</Card.Text>
       </Card.Body>
     </Card>
