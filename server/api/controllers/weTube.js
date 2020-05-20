@@ -34,7 +34,7 @@ exports.list_comments_by_video = async (req, res) => {
   const id = req.params.videoId;
   try {
     let data = await axios.get(
-      `https://www.googleapis.com/youtube/v3/commentThreads?part=snippet%20%2C%20replies&maxResults=100&videoId=${id}&fields=items%2Fid%20%2C%20items%2Fsnippet&key=${apiKey}`
+      `https://www.googleapis.com/youtube/v3/commentThreads?part=snippet%20%2C%20replies&order=relevance&maxResults=100&videoId=${id}&fields=items%2Fid%20%2C%20items%2Fsnippet%20%2C%20items%2Freplies&key=${apiKey}`
     );
 
     res.send(data.data);
@@ -62,7 +62,7 @@ exports.get_single_video = async (req, res) => {
   const id = req.params.videoId;
   try {
     let data = await axios.get(
-      `https://www.googleapis.com/youtube/v3/videos?part=player%20%2Cstatistics&id=${id}&regionCode=IT&fields=items&key=${apiKey}`
+      `https://www.googleapis.com/youtube/v3/videos?part=player%20%2Cstatistics%20%2Csnippet&id=${id}&regionCode=IT&fields=items&key=${apiKey}`
     );
 
     res.send(data.data);

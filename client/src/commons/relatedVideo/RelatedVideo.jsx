@@ -47,7 +47,6 @@ function RelatedVideo({
                     {view !== "" && (
                       <span className="mr-3">{view} visualizzazioni</span>
                     )}
-
                     <span className="mr-3">{data}</span>
                   </Col>
                 </Row>
@@ -64,7 +63,9 @@ function RelatedVideo({
                   <span>{nomecanale}</span>
                 </Col>
                 <Col className="related-video-small-detail grey-text">
-                  <span>{view} visualizzazioni</span>
+                  {view !== "" && (
+                    <span className="mr-3">{view} visualizzazioni</span>
+                  )}
                 </Col>
                 <Col className="related-video-small-detail grey-text">
                   <span>{data}</span>

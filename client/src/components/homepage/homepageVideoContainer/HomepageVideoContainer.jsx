@@ -1,9 +1,17 @@
 import React from "react";
 import { Container, CardGroup } from "react-bootstrap";
 import VideoCard from "../homepageVideoCard/HomepageVideoCard.jsx";
-import image from "../homepageVideoCard/img/ezioBosso.jpeg";
+import { useHistory } from "react-router-dom";
 
 function HomepageVideoContainer({ title, videoList }) {
+  const history = useHistory();
+
+  function openVideo(id) {
+    console.log(id);
+    if (id !== "") {
+      history.push(`/video/${id}`);
+    }
+  }
   return (
     <Container className="pt-4 pb-4">
       <h3 className="white-text">{title}</h3>
@@ -12,6 +20,7 @@ function HomepageVideoContainer({ title, videoList }) {
           videoList.items.slice(0, 4).map((video) => {
             return (
               <VideoCard
+                onClick={() => openVideo(video.id)}
                 key={video.id}
                 src={video.snippet.thumbnails.medium.url}
                 title={video.snippet.title}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 
-function HomepageVideoCard({ src, title, channelTitle, date, views }) {
+function HomepageVideoCard({ src, title, channelTitle, date, views, onClick }) {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <Card
@@ -10,6 +10,7 @@ function HomepageVideoCard({ src, title, channelTitle, date, views }) {
         setIsHovered(true);
       }}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={onClick}
     >
       <Card.Img variant="top" src={src} />
       <Card.Body>
