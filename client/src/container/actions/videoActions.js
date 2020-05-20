@@ -3,7 +3,9 @@ import axios from "axios";
 
 export const getPopularVideos = () => async (dispatch) => {
   try {
-    const data = await axios.get("http://localhost:3005/videos/most-popular");
+    const data = await axios.get(
+      "https://wetube2020.herokuapp.com/videos/most-popular"
+    );
     console.log(data);
     dispatch({ type: GET_VIDEOS, payload: data.data });
   } catch (error) {
@@ -14,7 +16,7 @@ export const getPopularVideos = () => async (dispatch) => {
 export const getVideosBySearch = (searchValue) => async (dispatch) => {
   try {
     const data = await axios.get(
-      `http://localhost:3005/videos/search/${searchValue}`
+      `https://wetube2020.herokuapp.com/videos/search/${searchValue}`
     );
     console.log(data);
     dispatch({ type: GET_VIDEOS, payload: data.data });
@@ -26,7 +28,7 @@ export const getVideosBySearch = (searchValue) => async (dispatch) => {
 export const getVideosByCategory = (id) => async (dispatch) => {
   try {
     const data = await axios.get(
-      `http://localhost:3005/videos/most-popular/${id}`
+      `https://wetube2020.herokuapp.com/videos/most-popular/${id}`
     );
     console.log(data);
     switch (id) {

@@ -20,13 +20,13 @@ function VideoPageContent({ match }) {
     const id = match.params.id;
     async function fetchData() {
       const videoDetailsData = await axios.get(
-        `http://localhost:3005/videos/${id}`
+        `https://wetube2020.herokuapp.com/videos/${id}`
       );
       const videoCommentsData = await axios.get(
-        `http://localhost:3005/comments/${id}`
+        `https://wetube2020.herokuapp.com/comments/${id}`
       );
       const videoRelatedData = await axios.get(
-        `http://localhost:3005/videos/related/${id}`
+        `https://wetube2020.herokuapp.com/videos/related/${id}`
       );
 
       setVideoDetails(videoDetailsData.data.items);
