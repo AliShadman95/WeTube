@@ -19,10 +19,11 @@ function VerticalListPages({
       getPopularVideos();
     }
   }, [match]);
+
   return (
     <Container fluid className="mt-3">
       <Row>
-        {typeof videoList !== "undefined" &&
+        {typeof videoList.items !== "undefined" &&
           videoList.items.map((video) => {
             return (
               <Col md="12" className="mb-2" key={video.id.videoId}>
@@ -47,8 +48,9 @@ function VerticalListPages({
   );
 }
 const mapStateToProps = (state) => {
+  console.log(state.videos.items);
   return {
-    videoList: state.items,
+    videoList: state.videos.items,
   };
 };
 

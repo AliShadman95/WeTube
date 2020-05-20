@@ -12,7 +12,7 @@ function Main({
   useEffect(() => {
     getVideosByCategory("17");
     getVideosByCategory("10");
-    getVideosByCategory("30");
+    getVideosByCategory("20");
   }, []);
 
   return (
@@ -24,7 +24,6 @@ function Main({
   );
 }
 const mapStateToProps = (state) => {
-  console.log(state.itemsByCategory);
   return {
     videoSportList: state.itemsByCategory,
     videoMusicList: state.itemsByCategory,
