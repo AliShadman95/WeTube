@@ -17,6 +17,7 @@ function HomepageVideoContainer({ title, videoList }) {
       <h3 className="white-text">{title}</h3>
       <CardGroup>
         {typeof videoList !== "undefined" &&
+          typeof videoList.items !== "undefined" &&
           videoList.items.slice(0, 4).map((video) => {
             return (
               <VideoCard

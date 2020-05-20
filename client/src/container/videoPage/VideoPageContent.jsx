@@ -42,23 +42,25 @@ function VideoPageContent({ match }) {
           <Video src={`https://www.youtube.com/embed/${match.params.id}`} />
           <Row>
             <Col>
-              {videoDetails.length > 0 && (
-                <BoxDescription
-                  channelName={videoDetails[0].snippet.channelTitle}
-                  numberView={videoDetails[0].statistics.viewCount}
-                  videoTitle={videoDetails[0].snippet.title}
-                  numberSubscribers="2000001"
-                  publishedAt={videoDetails[0].snippet.publishedAt}
-                  description={videoDetails[0].snippet.description}
-                  likeCount={videoDetails[0].statistics.likeCount}
-                  dislikeCount={videoDetails[0].statistics.dislikeCount}
-                />
-              )}
+              {typeof videoDetails !== "undefined" &&
+                videoDetails.length > 0 && (
+                  <BoxDescription
+                    channelName={videoDetails[0].snippet.channelTitle}
+                    numberView={videoDetails[0].statistics.viewCount}
+                    videoTitle={videoDetails[0].snippet.title}
+                    numberSubscribers="2000001"
+                    publishedAt={videoDetails[0].snippet.publishedAt}
+                    description={videoDetails[0].snippet.description}
+                    likeCount={videoDetails[0].statistics.likeCount}
+                    dislikeCount={videoDetails[0].statistics.dislikeCount}
+                  />
+                )}
             </Col>
           </Row>
           <Row>
             <Col>
-              {videoComments.length > 0 &&
+              {typeof videoComments !== "undefined" &&
+                videoComments.length > 0 &&
                 videoComments.map((item) => {
                   console.log(item);
                   return (
@@ -109,7 +111,8 @@ function VideoPageContent({ match }) {
         </Col>
         <Col xs="4" style={{ padding: "5px" }}>
           <h4>Prossimi video</h4>
-          {videoRelated.length > 0 &&
+          {typeof videoRelated !== "undefined" &&
+            videoRelated.length > 0 &&
             videoRelated.map((video) => (
               <RelatedVideo
                 key={video.id.videoId}
