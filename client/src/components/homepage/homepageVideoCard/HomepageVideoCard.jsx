@@ -18,7 +18,9 @@ function HomepageVideoCard({ src, title, channelTitle, date, views, onClick }) {
         <Card.Text className="grey-text hp-card-detail">
           {channelTitle}
         </Card.Text>
-        <Card.Text className="grey-text hp-card-detail">{views}</Card.Text>
+        <Card.Text className="grey-text hp-card-detail">
+          {views + " visualizzazioni"}
+        </Card.Text>
         <Card.Text className="grey-text hp-card-detail">{date}</Card.Text>
       </Card.Body>
     </Card>

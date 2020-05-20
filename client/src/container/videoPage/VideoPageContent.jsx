@@ -122,7 +122,7 @@ function VideoPageContent({ match }) {
             </Row>
           </Col>
           <Col md="12" lg="4" style={{ padding: "5px" }}>
-            <h4>Prossimi video</h4>
+            <h4 className="white-text">Prossimi video</h4>
             {typeof videoRelated !== "undefined" &&
               videoRelated.length > 0 &&
               videoRelated.map((video) => (

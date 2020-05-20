@@ -13,7 +13,7 @@ function Main({
     getVideosByCategory("17");
     getVideosByCategory("10");
     getVideosByCategory("20");
-  }, []);
+  }, [getVideosByCategory]);
 
   return (
     <div>

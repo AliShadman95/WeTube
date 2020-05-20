@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import RelatedVideo from "../../commons/relatedVideo/RelatedVideo";
-import video from "../videoPage/videoPageContent.json";
 import { connect } from "react-redux";
 import { getPopularVideos, getVideosBySearch } from "../actions/videoActions";
 import { useHistory } from "react-router-dom";
@@ -21,7 +20,7 @@ function VerticalListPages({
     } else {
       getPopularVideos();
     }
-  }, [match]);
+  }, [match, getPopularVideos, getVideosBySearch]);
 
   function openVideo(id) {
     console.log(id);
@@ -36,7 +35,7 @@ function VerticalListPages({
         {typeof videoList.items !== "undefined" &&
           videoList.items.map((video) => {
             return (
-              <Col md="12" className="mb-2" key={video.id.videoId}>
+              <Col md="12" className="mb-2" key={video.id.videoId || video.id}>
                 <RelatedVideo
                   onClick={() => openVideo(video.id.videoId || video.id)}
                   id={video.id.videoId}
