@@ -35,7 +35,6 @@ function VerticalListPages({
       <Row>
         {typeof videoList.items !== "undefined" &&
           videoList.items.map((video) => {
-            console.log(video);
             return (
               <Col md="12" className="mb-2" key={video.id.videoId}>
                 <RelatedVideo

@@ -18,7 +18,6 @@ function VideoPageContent({ match }) {
 
   useEffect(() => {
     const id = match.params.id;
-
     async function fetchData() {
       const videoDetailsData = await axios.get(
         `http://localhost:3005/videos/${id}`
